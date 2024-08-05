@@ -6,23 +6,57 @@
     <title>GHOST</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAiRtK9dQw+g0DyFkLJFqgWw8w7RwQDw8w7RwQDw8w7RwQDw8w7RwQDw==" crossorigin="anonymous">
     <style>
-        .animate {
-            animation: slide 2s linear infinite;
+        body {
+            background-color: #182028;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(200px);
-            }
+
+        .name {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .slogan {
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .info {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #00d1b2;
+            color: #182028;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #00b8a3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mt-5 animate">Hello World</h1>
-        <p class="text-center">Under Development!!</p>
+        <h1 class="name">UnderDevelopment</h1>
+        <p class="slogan">I love exploring new things!</p>
+        <p class="info">I enjoy learning new skills and implementing them in real life!</p>
+        <button class="button">Get In Touch</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUaIbzAiRtK9dQw+g0DyFkLJFqgWw8w7RwQDw8w7RwQDw8w7RwQDw8w7RwQDw==" crossorigin="anonymous"></script>
 </body>
